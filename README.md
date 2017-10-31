@@ -18,7 +18,7 @@ Install [homebrew](https://brew.sh/):
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-If you use `anaconda`, remove it from your `$PATH` by commenting out the source comment in your `bashrc`/`bash_profile`.
+If you use `anaconda`, remove it from your `$PATH` by commenting out the source comment in your `~/.bashrc`/`~/.bash_profile`.
 
 Install MEGAlib and Dependancies:
 
