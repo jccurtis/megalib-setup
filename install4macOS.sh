@@ -6,8 +6,8 @@ brew install \
     cmake \
     git \
     curl \
-    xquartz \
     awk
+brew install Caskroom/cask/xquartz
 
 cd $HOME
 git clone https://github.com/zoglauer/megalib.git megalib
