@@ -5,6 +5,7 @@ brew install \
     cmake \
     git \
     curl \
+    xquartz \
     awk
 
 cd $HOME
