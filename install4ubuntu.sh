@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+sudo sh -c "ulimit -n 65535 && exec su $LOGNAME"
 sudo apt-get upgrade
 sudo apt-get update
 apt-get -y --force-yes install \
