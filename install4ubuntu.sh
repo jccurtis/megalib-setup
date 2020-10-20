@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-sudo apt-get upgrade
-sudo apt-get update
-apt-get -y --force-yes install \
+sudo apt update
+sudo apt -y --force-yes install \
     curl \
     wget \
     vim \
