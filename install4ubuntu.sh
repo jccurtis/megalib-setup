@@ -41,6 +41,8 @@ sudo apt -y --force-yes install \
     libxt-dev
 
 cd $HOME
-git clone https://github.com/zoglauer/megalib.git megalib
+if [[ ! -d megalib ]]; then
+    git clone https://github.com/zoglauer/megalib.git
+fi
 cd megalib
 bash setup.sh --release=dev --patch=yes --clean=yes --branch=experimental
