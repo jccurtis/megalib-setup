@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+set -e  # exit on error
+set -u  # treat refs to unassigned vars as errors
+set -o pipefail  # still consider errors before a pipe to be an error
+
 sudo apt update
 sudo apt -y --force-yes install \
     curl \
