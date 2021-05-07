@@ -5,7 +5,7 @@ set -u  # treat refs to unassigned vars as errors
 set -o pipefail  # still consider errors before a pipe to be an error
 
 sudo apt update
-sudo apt -y --force-yes install \
+sudo apt -yq install \
     curl \
     wget \
     vim \
@@ -31,11 +31,15 @@ sudo apt -y --force-yes install \
     libfftw3-dev graphviz-dev \
     libavahi-compat-libdnssd-dev \
     libldap2-dev \
-    python-dev \
+    python3 \
+    python-is-python3 \
+    python3-dev \
+    python-dev-is-python3 \
+    python3-pip \
     libxml2-dev \
     libkrb5-dev \
     libgsl-dev \
-    libqt4-dev \
+    qt5-default \
     libpng-dev \
     libjpeg-dev \
     g++-multilib \
